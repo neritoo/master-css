@@ -1,0 +1,121 @@
+/*
+SELECTORES
+*/
+
+
+/* Selector universal*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Selector de etiqueta*/
+
+h1 {
+    background: red;
+    color: white;
+}
+
+a {
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+}
+
+footer a {
+    color: #4a67e6;
+    text-decoration: underline;
+}
+
+
+/*Selector de id*/
+
+#descripcion,
+#titulo {
+    border: 2px solid darksalmon;
+    padding: 15px;
+}
+
+#titulo {
+    background: blue;
+    border: 5px dashed black;
+}
+
+
+/*Selector de clase*/
+
+.parrafo {
+    font-style: italic;
+    /* text-decoration: underline; */
+    font-weight: bold;
+}
+
+.parrafo1,
+.parrafo3 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.parrafo3 {
+    background-color: orange;
+    color: white;
+}
+
+
+/*Selector de atributo*/
+
+#usuario form {
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#usuario form * {
+    display: block;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    background: transparent;
+    color: green;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: green;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+/*Selector hijo*/
+
+#menu>li>a {
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+
+/*Prioridad*/
+
+#saludo h1 {
+    background: brown;
+}
+
+h1 {
+    background: #dd3ebb !important;
+}
